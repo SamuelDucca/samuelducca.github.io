@@ -88,7 +88,7 @@ Lumina parses standard BibTeX (`.bib`) files natively — no external tools requ
 
 ### Auto Features
 
-- **Venue type detection** — Automatically classifies venues (conference, journal, workshop, etc.) and shows color-coded badges.
+- **Venue type detection** — Automatically classifies venues (conference, journal, workshop, etc.) and shows color-coded badges. BibTeX `@incollection` and `@inbook` entries appear as `book chapter`.
 - **Author highlighting** — Your name (set in config) is bolded in every author list.
 - **Year grouping** — Publications grouped by year with counts.
 - **Selected papers** — Papers with `selected: true` appear in a homepage widget (up to 5).

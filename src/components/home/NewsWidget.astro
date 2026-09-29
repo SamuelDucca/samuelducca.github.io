@@ -13,7 +13,7 @@ let newsItems: { title: string; date: Date; content: string; pinned: boolean }[]
 try {
   const files = fs.readdirSync(newsDir).filter(f => f.endsWith('.md'));
   for (const file of files) {
-    const raw = fs.readFileSync(path.join(newsDir, file), 'utf-8');
+    const raw = fs.readFileSync(path.join(newsDir, file), 'utf-8').replace(/\r\n/g, '\n');
     const frontmatterMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
     if (frontmatterMatch) {
       const fm = frontmatterMatch[1];

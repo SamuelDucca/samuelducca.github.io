@@ -14,7 +14,7 @@ let newsItems: { title: string; date: Date; content: string; pinned: boolean }[]
 try {
   const files = fs.readdirSync(newsDir).filter(f => f.endsWith('.md'));
   for (const file of files) {
-    const raw = fs.readFileSync(path.join(newsDir, file), 'utf-8');
+    const raw = fs.readFileSync(path.join(newsDir, file), 'utf-8').replace(/\r\n/g, '\n');
     const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
     if (!fmMatch) continue;
     const fm = fmMatch[1];
@@ -41,8 +41,8 @@ newsItems.sort((a, b) => {
 
   <div class="space-y-6">
     {newsItems.map(item => (
-      <div class="animate-on-scroll flex gap-4 sm:gap-6 items-start p-4 rounded-xl hover:bg-[var(--color-card-bg)] transition-colors">
-        <div class="text-sm font-mono text-[var(--color-text-secondary)] shrink-0 min-w-[6rem] pt-0.5">
+      <div class="animate-on-scroll flex flex-col gap-1 sm:flex-row sm:gap-6 items-start p-4 rounded-xl hover:bg-[var(--color-card-bg)] transition-colors">
+        <div class="text-sm font-mono text-[var(--color-text-secondary)] sm:w-40 sm:shrink-0 pt-0.5">
           {formatDate(item.date)}
         </div>
         <div>

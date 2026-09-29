@@ -4,11 +4,12 @@ export interface Publication {
   authors: string[];
   year: number;
   venue: string;
-  venueType: 'conference' | 'journal' | 'workshop' | 'preprint' | 'thesis' | 'other';
+  venueType: 'conference' | 'journal' | 'workshop' | 'preprint' | 'thesis' | 'book chapter' | 'other';
   doi?: string;
   url?: string;
   pdf?: string;
   code?: string;
+  dataset?: string;
   video?: string;
   slides?: string;
   abstract?: string;

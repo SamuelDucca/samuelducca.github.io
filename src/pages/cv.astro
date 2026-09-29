@@ -8,6 +8,8 @@ import yaml from 'yaml';
 
 const config = getConfig();
 if (!config.pages.cv) return Astro.redirect('/404');
+const pdfPath = path.resolve(process.cwd(), 'public/files/cv.pdf');
+const hasPdf = fs.existsSync(pdfPath);
 
 let cvData: any = { education: [], experience: [], skills: [], awards: [], service: [] };
 try {
@@ -22,7 +24,7 @@ try {
       <div class="page-header">
         <h1 class="text-3xl font-bold">Curriculum Vitae</h1>
       </div>
-      {!config.cv?.hide_pdf_download && (
+      {hasPdf && !config.cv?.hide_pdf_download && (
         <a
           href="/files/cv.pdf"
           class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition-opacity"

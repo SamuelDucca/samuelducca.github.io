@@ -2,61 +2,64 @@
 # Edit this file to configure your site. Toggle pages, set info, customize theme.
 
 site:
-  title: "Richard D. Sanchez"
-  description: "Assistant Professor of Computer Science"
-  url: "https://username.github.io"
+  title: "Samuel Ducca"
+  description: "PhD student in Computer Engineering"
+  url: "https://samuelducca.github.io"
   language: "en"
 
 profile:
-  name: "Richard Daniel Sanchez"
-  position: "Assistant Professor"
-  affiliation: "Department of Computer Science"
-  university: "Greendale University"
-  email: "r.sanchez@greendale.edu"
-  avatar: "/images/avatar.svg"
-  bio: "I am an Assistant Professor of Computer Science at Greendale University. My research focuses on machine learning, natural language processing, and AI for social good."
-  bio_short: "Researching ML, NLP, and AI for social good."
+  name: "Samuel Ducca"
+  position: "PhD student in Computer Engineering"
+  affiliation: ""
+  university: "Universidade de São Paulo"
+  email: "samuel.ducca@usp.br"
+  avatar: "/images/ducca4.jpeg"
+  bio: "I am a PhD student in Computer Engineering at Universidade de São Paulo. My research focuses on Integrated Sensing and Communication (ISAC) systems, with a particular focus on environmental sensing applied to climate change and sustainability."
+  bio_short: "Researching low-cost sensing and communication systems for environmental monitoring adapt our cities to climate change."
 
 social:
-  google_scholar: "https://scholar.google.com/citations?user=XXXXXXX"
-  github: "https://github.com/username"
-  twitter: "https://twitter.com/username"
-  linkedin: "https://linkedin.com/in/username"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=IrCn8ugAAAAJ&view_op=list_works"
+  github: "https://github.com/samuelducca"
+  twitter: ""
+  linkedin: "https://www.linkedin.com/in/samuel-vieira-ducca/"
+  orcid: "https://orcid.org/0000-0001-6247-2802"
   semantic_scholar: ""
   dblp: ""
-  email: "r.sanchez@greendale.edu"
+  email: "samuel.ducca@usp.br"
 
 pages:
   about: true
   publications: true
   cv: true
-  projects: true
+  projects: false
   news: true
-  teaching: true
+  teaching: false
   talks: true
   awards: true
-  team: true
-  positions: true
-  collaborators: true
-  service: true
-  repositories: true
-  blog: true
-  gallery: true
-  books: true
-  media: true
-  travel: true
+  team: false
+  positions: false
+  collaborators: false
+  service: false
+  repositories: false
+  blog: false
+  gallery: false
+  books: false
+  media: false
+  travel: false
 
 theme:
   cursor_spotlight: false
-  style: "modern"
-  palette: "default"
+  style: "minimal"
+  palette: "red"
+  mode: "light"  # "light", "dark", or "system"
+  show_theme_picker: false
+  show_mode_toggle: false
   random_theme: false
   avatars:
-    - "/images/avatar.svg"
+    - "/images/ducca4.jpeg"
 
 publications:
-  author_name: "Richard Daniel Sanchez"
+  author_name: "Samuel Ducca"
   bibtex_file: "papers.bib"
   group_by_year: true
   show_badges: true

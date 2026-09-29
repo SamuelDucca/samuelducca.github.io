@@ -1,6 +1,6 @@
 .prose {
   font-family: var(--font-body, 'Crimson Pro'), 'Georgia', serif;
-  font-size: 1.125rem;
+  font-size: 1rem; /*1.125rem;*/
   line-height: 1.8;
   color: var(--color-text);
   max-width: 65ch;

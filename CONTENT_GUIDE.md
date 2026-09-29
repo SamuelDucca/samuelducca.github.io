@@ -16,11 +16,12 @@ Add a BibTeX entry to `src/content/publications/papers.bib`:
   year={2024},
   pdf={https://link-to-pdf},
   code={https://github.com/you/repo},
+  dataset={https://example.org/your-dataset},
   selected={true}
 }
 ```
 
-Optional fields: `pdf`, `code`, `video`, `slides`, `doi`, `selected` (shows on homepage).
+Optional fields: `pdf`, `code`, `dataset`, `video`, `slides`, `doi`, `selected` (shows on homepage). When `dataset` is set, a **Dataset** button appears on that publication.
 
 ---
 

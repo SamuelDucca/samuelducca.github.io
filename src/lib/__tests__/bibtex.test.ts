@@ -101,4 +101,22 @@ describe('parseBibTeX', () => {
     expect(parseBibTeX(workshop)[0].venueType).toBe('workshop');
     expect(parseBibTeX(preprint)[0].venueType).toBe('preprint');
   });
+
+  it('classifies book chapters from their BibTeX entry type', () => {
+    const bib = `@incollection{Ducca2025Minicurso,
+  title={Wireless sensing},
+  author={Ducca, Samuel Vieira},
+  booktitle={Minicursos do SBRC 2025},
+  year={2025},
+}
+@inbook{doe2024chapter,
+  title={A Book Chapter},
+  author={Doe, Jane},
+  booktitle={Workshop Handbook},
+  year={2024},
+}`;
+    const pubs = parseBibTeX(bib);
+    expect(pubs.map(pub => pub.venueType)).toEqual(['book chapter', 'book chapter']);
+    expect(pubs[0].venue).toBe('Minicursos do SBRC 2025');
+  });
 });

@@ -58,12 +58,17 @@ pages:
 theme:
   style: "classic"      # classic, modern, minimal, elegant, bold, geek, newspaper, aurora, ocean, retro
   palette: "navy"        # varies per theme (default, navy, forest, plum, slate for classic)
+  mode: "system"         # system, light, or dark
+  show_theme_picker: false  # show the style and color selector to visitors
+  show_mode_toggle: false   # show the light/dark button to visitors
   cursor_spotlight: false
   random_theme: false    # randomize theme on each visit
   avatars:               # multiple avatars for random rotation
     - "/images/avatar.jpg"
     - "/images/avatar2.png"
 ```
+
+`mode` sets the light/dark appearance. `system` follows the visitor's device setting. Set either `show_*` option to `true` to let visitors change that setting. When a control is hidden, the corresponding value from this file applies even if the visitor made a choice in the past.
 
 ---
 
@@ -175,7 +180,7 @@ service:
     venue: "ICRA 2025"
 ```
 
-To include a downloadable PDF, place it at `public/files/cv.pdf`. To hide the download button, set `hide_pdf_download: true` in `site.config.yml`.
+The download button appears when `public/files/cv.pdf` exists. After editing the CV data, regenerate that file with `python scripts/generate_cv_pdf.py` (requires Python's `reportlab` package and Node.js with the site's dependencies installed). To hide the download button, set `hide_pdf_download: true` in `site.config.yml`.
 
 ---
 

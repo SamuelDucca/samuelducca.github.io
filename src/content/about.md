@@ -1,11 +1,4 @@
-I am an Assistant Professor of Computer Science at Greendale University, where I lead the **Language, Learning & Fairness Lab (LLF Lab)**. My research sits at the intersection of machine learning, natural language processing, and AI ethics.
 
-## Research Interests
+I am a PhD student in Computer Engineering at the University of São Paulo, advised by [Prof. Cintia Borges Margi](https://sites.google.com/usp.br/cintia/p%C3%A1gina-inicial). My research focuses on Integrated Sensing and Communications (ISAC) for environmental sensing, with current work on atmospheric and rainfall sensing using Wi-Fi and cellular networks.
 
-- **Efficient Knowledge Transfer**: Developing methods for transferring knowledge across tasks and domains with minimal computational overhead.
-- **Low-Resource NLP**: Building robust language technologies that work for underserved languages and communities.
-- **AI Fairness**: Creating machine learning systems that are fair, transparent, and accountable.
-
-## Background
-
-Before joining Greendale, I completed my PhD at MIT. I received my BS in Computer Science from UC Berkeley, graduating with highest honors. I have published 40+ papers at top venues including ICML, NeurIPS, ACL, EMNLP, and AAAI.
+My Master's research explored low-cost animal and pedestrian crossing detection for roadway safety using Wi-Fi sensing. This research has been recognized through several awards, including Second Prize in the 2024 IEEE Communications Society *Communication Technology Changing the World* Student Competition, the Best Student Paper Award at IEEE LATINCOM 2023, and the Best Master's Thesis Award at the 2025 Brazilian Symposium on Computer Networks and Distributed Systems (SBRC).

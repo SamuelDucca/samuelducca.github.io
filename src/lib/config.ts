@@ -7,7 +7,7 @@ export interface SiteConfig {
   profile: { name: string; position: string; affiliation: string; university: string; email: string; avatar: string; bio: string; bio_short: string };
   social: Record<string, string>;
   pages: Record<string, boolean>;
-  theme: { cursor_spotlight: boolean; style: string; palette: string; random_theme: boolean; avatars: string[]; };
+  theme: { cursor_spotlight: boolean; style: string; palette: string; mode?: 'light' | 'dark' | 'system'; show_theme_picker?: boolean; show_mode_toggle?: boolean; random_theme: boolean; avatars: string[]; };
   cv?: { hide_pdf_download?: boolean };
   publications: { author_name: string; bibtex_file: string; group_by_year: boolean; show_badges: boolean };
   analytics?: { google_analytics?: string };

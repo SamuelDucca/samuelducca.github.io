@@ -18,7 +18,8 @@ export function parseBibTeX(bibtex: string): Publication[] {
 
     const venueLower = venue.toLowerCase();
     let venueType: Publication['venueType'] = 'other';
-    if (venueLower.includes('workshop')) venueType = 'workshop';
+    if (bibtexType === 'incollection' || bibtexType === 'inbook') venueType = 'book chapter';
+    else if (venueLower.includes('workshop')) venueType = 'workshop';
     else if (venueLower.includes('arxiv') || venueLower.includes('preprint')) venueType = 'preprint';
     else if (bibtexType === 'inproceedings' || bibtexType === 'conference') venueType = 'conference';
     else if (bibtexType === 'article') {
@@ -31,7 +32,7 @@ export function parseBibTeX(bibtex: string): Publication[] {
 
     entries.push({
       id, title: cleanTeX(fields.title || ''), authors, year, venue: cleanTeX(venue), venueType,
-      doi: fields.doi, url: fields.url, pdf: fields.pdf, code: fields.code,
+      doi: fields.doi, url: fields.url, pdf: fields.pdf, code: fields.code, dataset: fields.dataset,
       video: fields.video, slides: fields.slides,
       abstract: fields.abstract ? cleanTeX(fields.abstract) : undefined,
       selected: fields.selected === 'true' || fields.selected === 'yes',

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --color-bg: #FAFAFA;
@@ -233,7 +234,8 @@ img:not([loading="lazy"]) {
 
 [data-theme="modern"] .avatar-frame { box-shadow: 0 0 0 3px var(--color-accent), var(--shadow-lg); }
 [data-theme="classic"] .avatar-frame { box-shadow: 0 0 0 2px var(--color-border), var(--shadow-md); background: var(--color-card-bg); padding: 4px; }
-[data-theme="minimal"] .avatar-frame { box-shadow: 0 0 0 1px var(--color-text); border-radius: 0; }
+/*[data-theme="minimal"] .avatar-frame { box-shadow: 0 0 0 0px var(--color-text); border-radius: 0; }*/
+[data-theme="minimal"] .avatar-frame { box-shadow: 0 0 0 2px var(--color-border), var(--shadow-md); background: var(--color-card-bg); padding: 4px; }
 [data-theme="minimal"] .avatar-frame img { border-radius: 0; }
 [data-theme="elegant"] .avatar-frame { box-shadow: 0 0 0 2px var(--color-accent), 0 4px 16px rgba(184,134,11,0.15); }
 [data-theme="bold"] .avatar-frame { box-shadow: 0 0 0 4px var(--color-accent), 0 0 20px rgba(0,102,255,0.2); }

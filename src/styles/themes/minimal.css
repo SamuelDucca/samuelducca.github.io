@@ -53,6 +53,10 @@
 }
 
 /* Minimal: uppercase monospace headings */
+[data-theme="minimal"] .site-title {
+  text-transform: uppercase;
+}
+
 [data-theme="minimal"] .page-header h1,
 [data-theme="minimal"] .page-header h2 {
   text-transform: uppercase;

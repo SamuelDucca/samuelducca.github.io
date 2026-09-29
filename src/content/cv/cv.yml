@@ -1,56 +1,69 @@
 education:
-  - degree: "Ph.D. in Computer Science"
-    institution: "Massachusetts Institute of Technology"
-    year: "2017–2021"
-    description: "Thesis: Neural Approaches to Cross-Lingual NLP."
-  - degree: "B.S. in Computer Science (Highest Honors)"
-    institution: "University of California, Berkeley"
-    year: "2013–2017"
-    description: "Graduated summa cum laude."
+  - degree: "PhD in Computer Engineering"
+    institution: "Universidade de São Paulo"
+    year: "2025 – Present"
+    description: "Research focus: Integrating sensing and communications in smart cities: predicting atmospheric phenomena using 5G signals"
+  - degree: "M.Sc. in Computer Engineering"
+    institution: "Universidade de São Paulo"
+    year: "2024"
+    description: "Thesis: Low-cost animal and pedestrian crossing detection in rural roads using WiFi sensing and deep learning."
+  - degree: "B.S. in Computer Engineering"
+    institution: "Universidade de São Paulo"
+    year: "2022"
+    description: "Capstone Project: Online Platform for Inferring Environmental and Socioeconomic Indicators Using Neural Networks on Satellite Images"
 
 experience:
-  - title: "Assistant Professor"
-    organization: "Greendale University"
-    start_date: "2022"
-    end_date: "Present"
-    description: "Leading the Language, Learning & Fairness Lab."
-  - title: "Postdoctoral Researcher"
-    organization: "Google DeepMind"
+  - title: "Data Analyst Intern"
+    organization: "Itaú Unibanco"
+    start_date: "2023"
+    end_date: "2023"
+    description: "Summer internship focused on NLP applications for credit card fraud detection and risk assessment."
+  - title: "Virtual Reality Developer Intern"
+    organization: "VRMonkey"
     start_date: "2021"
-    end_date: "2022"
-    description: "Large language model alignment and safety."
-  - title: "Research Intern"
-    organization: "Meta AI (FAIR)"
-    start_date: "Summer 2020"
-    end_date: "Summer 2020"
-    description: "Multilingual NLP and cross-lingual transfer."
+    end_date: "2021"
+    description: "Developed virtual reality applications for healthcare and PlayStation 4 games."
+  - title: "Backend Developer Intern"
+    organization: "BTG Pactual"
+    start_date: "2020"
+    end_date: "2020"
+    description: "Developed tools for back-office trade operations and invoice generation using C# and the .NET Framework."
 
 skills:
   - category: "Programming"
-    items: ["Python", "PyTorch", "JAX", "C++", "TypeScript"]
-  - category: "ML/NLP"
-    items: ["Transformers", "Reinforcement Learning", "Multimodal Learning", "Fairness"]
-  - category: "Tools"
-    items: ["Git", "Docker", "Kubernetes", "LaTeX", "Weights & Biases"]
+    items: ["Python", "C", "C#", "TypeScript", "Git"]
+  - category: "Machine Learning/AI"
+    items: ["TensorFlow", "Transformers", "Edge AI", "Real-Time Inference", "Time-Series Modeling", "Signal Classification"]
+  - category: "Computer Engineering"
+    items: ["IoT", "Embedded Systems", "Wireless Sensor Networks", "Signal Processing", "Wireless Sensing", "ISAC"]
 
 awards:
-  - title: "NSF CAREER Award"
-    organization: "National Science Foundation"
+  - title: "Best Master's Thesis Award"
+    organization: "Brazilian Symposium on Computer Networks and Distributed Systems (SBRC)"
+    year: 2025
+  - title: "CNPq Doctoral Fellowship"
+    organization: "National Council for Scientific and Technological Development (CNPq)"
+    year: 2025
+  - title: "Second Prize, IEEE Communication Technology Changing the World Student Competition"
+    organization: "IEEE Communications Society"
     year: 2024
-  - title: "Best Paper Award"
-    organization: "ACL 2023"
+  - title: "Best Student Paper Award"
+    organization: "IEEE LATINCOM 2023"
     year: 2023
-  - title: "Outstanding Dissertation Award"
-    organization: "MIT EECS"
-    year: 2021
-  - title: "Google PhD Fellowship"
-    organization: "Google"
-    year: 2019
+  - title: "Travel Grant"
+    organization: "IEEE LATINCOM 2023"
+    year: 2023
+  - title: "Itaú Unibanco Data Science Fellowship"
+    organization: "Itaú Unibanco"
+    year: 2022
 
 service:
-  - role: "Area Chair"
-    organization: "ACL, EMNLP, NAACL"
-    years: "2023–Present"
+  - role: "Graduate Student Representative"
+    organization: "Graduate Program Coordinating Committee (CCP/PPGEE), Escola Politécnica, Universidade de São Paulo"
+    years: "2025–Present"
+  - role: "Graduate Affairs Director"
+    organization: "Grêmio Politécnico da USP (Student Association)"
+    years: "2025–2026"
   - role: "Reviewer"
-    organization: "NeurIPS, ICML, ICLR, JMLR"
-    years: "2019–Present"
+    organization: "IEEE Internet of Things Journal"
+    years: "2025–Present"
